@@ -55,5 +55,7 @@ Data analysis is performed using Tablea uto visualize and explore insights deriv
 
 ### Chart Visualization Results: 
 -  Connect to Datawarehouse using Tableau: ![ConnectDWAzure](images/Connect_DW_Tableau.png)
--  Online Sales by Region: ![Chart 1](images/chart1.png)
--  Online Sale By Product category: ![Chart 2](images/chart.png)
+-  Online Sales by Region:
+-  ![Chart 1](images/chart1.png)
+-  Online Sale By Product category:
+-   ![Chart 2](images/chart.png)
