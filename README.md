@@ -53,7 +53,7 @@ Demonstrate ETL pipeline design on both SSIS and ADF tools
 
 Data analysis is performed using Power BI to visualize and explore insights derived from the Data Warehouse.
 
-### Chart Visualization
-
-- ![Chart 1](chart1.png)
-- ![Chart 2](chart2.png)
+### Chart Visualization Results: 
+-  Connect to Datawarehouse using Tableau: ![Chart 1](Success_LoadingOnAzure.png)
+-  Online Sales by Region: ![Chart 1](chart1.png)
+-  Online Sale By Product category: ![Chart 2](chart2.png)
