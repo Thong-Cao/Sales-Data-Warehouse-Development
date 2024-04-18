@@ -10,15 +10,15 @@ This project aims to design and implement a Data Warehouse solution for analyzin
 
 The Data Warehouse follows a Star Schema design, comprising dimension and fact tables tailored specifically for analyzing sales data.
 
-### Schema
+### Schema of Data Source
 
 ![Sales Module Schema](Schema_Sales.png)
 
-#### Fact Table
+### Fact Table
 
 The `FactInternetSales` table tracks internet sales transactions, capturing product, customer, and order details, along with pricing, discounts, and shipping costs. It also records key dates such as order, due, and ship dates for detailed sales analysis.
 
-#### Dimension Tables
+### Dimension Tables
 
 - `DimCustomer`: Contains comprehensive customer details, including personal information, education, and occupation. It tracks employment periods and data usage status.
 - `DimDate`: Manages detailed date information with day, month, and year identifiers, including names and numerical indexes.
@@ -37,9 +37,10 @@ The ETL (Extract, Transform, Load) process is crucial for populating the Data Wa
 ### ETL Pipeline
 
 - Developed ETL pipeline with Incremental Loading to automate processes and minimize data duplication.
-- Implemented ETL pipeline using SQL Server Integration Services (SSIS) for on-premises data integration and Azure Data Factory for cloud-based integration.
+- Implemented ETL pipeline using **SQL Server Integration Services (SSIS)** for on-premises data integration and **Azure Data Factory** for cloud-based integration.
 
 #### Dimtable ETL Illustration
+Demonstrate ETL pipeline design on both SSIS and ADF tools
 
 - SSIS: ![DimCustomer ETL SSIS](DimCustomer_ETL_SSIS.png)
 - Azure Data Factory: ![DimCustomer ETL ADF](DimCustomer_ETL_ADF.png)
