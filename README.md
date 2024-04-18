@@ -29,11 +29,8 @@ The `FactInternetSales` table tracks internet sales transactions, capturing prod
 ![Data Warehouse Schema](Star_Schema_InternetSales.png)
 
 ## ETL Process
-
-### Overview
-
 The ETL (Extract, Transform, Load) process is crucial for populating the Data Warehouse with relevant data from the source system.
-
+After designing the DataWarehouse for the Sales module, in this part I use two tools at the same time including SSIS and Azure Data Factory (ADF) to develop an ETL pipeline to transfer data from Source to Destination in a standard way.
 ### ETL Pipeline
 
 - Developed ETL pipeline with Incremental Loading to automate processes and minimize data duplication.
