@@ -2,7 +2,7 @@
 Data Warehouse project analyzing AdventureWorks sales data, featuring Star Schema design, ETL pipelines, and visualization."
 ## Overview
 
-This project aims to design and implement a Data Warehouse solution for analyzing sales data using the AdventureWorks database provided by Microsoft. The primary objective is to explore and analyze sales transactions to derive meaningful insights for decision-making purposes.
+This project aims to design and implement a Data Warehouse solution for analyzing sales data using the ([AdventureWorks](https://dataedo.com/download/AdventureWorks.pdf)) database provided by Microsoft. The primary objective is to explore and analyze sales transactions to derive meaningful insights for decision-making purposes.
 
 ## Data Warehouse Design
 
@@ -12,7 +12,7 @@ The Data Warehouse follows a Star Schema design, comprising dimension and fact t
 
 ### Schema of Data Source
 
-![Sales Module Schema](Schema_Sales.png)
+![Sales Module Schema](images/Schema_Sales.png)
 
 ### Fact Table
 
@@ -26,7 +26,7 @@ The `FactInternetSales` table tracks internet sales transactions, capturing prod
 - `DimProduct`: Records product details like name, cost, sales attributes, and availability dates.
 - `DimPromotion`: Catalogs promotions with details on discount rates, types, duration, and constraints.
 
-![Data Warehouse Schema](Star_Schema_InternetSales.png)
+![Data Warehouse Schema](images/Star_Schema_InternetSales.png)
 
 ## ETL Process
 The ETL (Extract, Transform, Load) process is crucial for populating the Data Warehouse with relevant data from the source system.
@@ -39,13 +39,13 @@ After designing the DataWarehouse for the Sales module, in this part I use two t
 #### Dimtable ETL Illustration
 Demonstrate ETL pipeline design on both SSIS and ADF tools
 
-- SSIS: ![DimCustomer ETL SSIS](DimCustomer_ETL_SSIS.png)
-- Azure Data Factory: ![DimCustomer ETL ADF](DimCustomer_ETL_ADF.png)
+- SSIS: ![DimCustomer ETL SSIS](images/DimCustomer_ETL_SSIS.png)
+- Azure Data Factory: ![DimCustomer ETL ADF](images/DimCustomer_ETL_ADF.png)
 
 #### Fact Table ETL Illustration
 
-- SSIS: ![Fact ETL SSIS](Fact_ETL_SSIS.png)
-- Azure Data Factory: ![Fact ETL ADF](Fact_ETL_ADF.png)
+- SSIS: ![Fact ETL SSIS](images/Fact_ETL_SSIS.png)
+- Azure Data Factory: ![Fact ETL ADF](images/Fact_ETL_ADF.png)
 
 ## Data Analysis
 
@@ -54,6 +54,6 @@ Demonstrate ETL pipeline design on both SSIS and ADF tools
 Data analysis is performed using Power BI to visualize and explore insights derived from the Data Warehouse.
 
 ### Chart Visualization Results: 
--  Connect to Datawarehouse using Tableau: ![Chart 1](Success_LoadingOnAzure.png)
--  Online Sales by Region: ![Chart 1](chart1.png)
--  Online Sale By Product category: ![Chart 2](chart2.png)
+-  Connect to Datawarehouse using Tableau: ![Chart 1](images/Success_LoadingOnAzure.png)
+-  Online Sales by Region: ![Chart 1](images/chart1.png)
+-  Online Sale By Product category: ![Chart 2](images/chart2.png)
